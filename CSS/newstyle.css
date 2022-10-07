@@ -3,46 +3,40 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-}
-
-p, h1, h2 {
-  color: white;
-  font-size: 20px;
-}
-
-html {
   text-align: center;
 }
 
 h1 {
   font-size: 50px;
   font-weight: bold;
+  color: white;
 }
 
 div > h2 {
   font-size: 35px;
+  color: white;
 }
-
-h2:hover {
-  color: azure;
+div > h2:hover {
+  color: white;
   border: solid 3px whitesmoke;
 }
-
-p:active {
+div > p {
+  color: white;
+  font-size: 20px;
+}
+div > p:active {
   font-size: 35px;
 }
-
-a:link {
+div > a:link {
   font-size: 20px;
   color: rgb(235, 133, 126);
 }
-
-a:visited {
-  color: rgb(236, 127, 132);
+div > a:visited {
+  color: rgb(235, 133, 126);
 }
 
 p + img, img {
-  border-color: rgb(224, 200, 59);
+  border-color: gold;
   border-width: 5px;
   border-style: dotted;
 }/*# sourceMappingURL=newstyle.css.map */

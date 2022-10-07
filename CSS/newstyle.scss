@@ -1,48 +1,43 @@
-html {
-    background-image: url(https://i.pinimg.com/originals/bf/57/21/bf5721c77ca5a0277107284d5aa16018.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100%;
-}
-
-p, h1, h2 {
-    color: white;
-    font-size: 20px;
-}
-
-html {
-    text-align: center;
-}
+@use "general";
+$main-font-color: white;
 
 h1 {
     font-size: 50px;
     font-weight: bold;
+    color: $main-font-color;
 }
 
-div > h2 {
+
+div {
+    > h2 {
     font-size: 35px;
-}
+    color: $main-font-color;
 
-h2:hover {
-    color: azure;
-    border: solid 3px whitesmoke;
-}
+    &:hover {
+        color: $main-font-color;
+        border: solid 3px whitesmoke;} 
+    }
 
-p:active {
-    font-size: 35px;
-}
-
-a:link {
+    > p{
+    color: $main-font-color;
     font-size: 20px;
-    color: rgb(235, 133, 126);
-}
+    
+    &:active {
+    font-size: 35px;}
+    }
 
-a:visited {
-    color: rgb(236, 127, 132);
+    > a{
+    &:link {
+    font-size: 20px;
+    color: rgb(235, 133, 126);}
+
+    &:visited{
+    color: rgb(235, 133, 126)}
+    }
 }
 
 p + img,img {
-    border-color: rgb(224, 200, 59);
+    border-color:gold;
     border-width: 5px;
     border-style: dotted;
 }
